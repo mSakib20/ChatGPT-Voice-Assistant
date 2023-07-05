@@ -16,7 +16,7 @@ After that, install the necessary Python dependencies:
 
 Don't forget to use your own OpenAI API key
 
-    link: https://platform.openai.com/account/api-keys
+    https://platform.openai.com/account/api-keys
 
 ## Usage:
 
