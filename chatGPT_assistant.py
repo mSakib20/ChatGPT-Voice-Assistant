@@ -34,3 +34,30 @@ while True:
     except sr.UnknownValueError:
         print("Google Speech Recognition could not understand audio")
         continue
+    
+    # Format the user's input and append it to the conversation history
+    prompt = f"{userName}: {userInput}\n{aiName}:"
+    conversation += prompt
+
+    # Used the OpenAI API to generate a response based on the conversation
+    response = openai.Completion.create(
+        model="text-davinci-003",
+        prompt=conversation,
+        temperature=1,
+        max_tokens=256,
+        top_p=1,
+        frequency_penalty=0,
+        presence_penalty=0
+    )
+
+    # Extract the AI's response text from the API's response and strip leading/trailing whitespace
+    responseText = response.choices[0].text.strip()
+    
+    # Append the AI's response to the conversation history and print it
+    conversation += responseText + "\n"
+    conversation += responseText + "\n"
+    print(responseText)
+
+    # Speak the AI's response
+    engine.say(responseText)
+    engine.runAndWait()
