@@ -6,6 +6,29 @@ This repository contains code for a Voice Assistant based on the OpenAI GPT mode
 
 To use this project, you'll first need to clone the repository:
 
-```bash
-git clone https://github.com/mSakib20/ChatGPT-Voice-Assistant.git
-cd ChatGPT-Voice-Assistant
+
+    git clone https://github.com/mSakib20/ChatGPT-Voice-Assistant.git
+    cd ChatGPT-Voice-Assistant
+
+After that, install the necessary Python dependencies:
+    
+    pip install -r requirements.txt
+
+## Usage:
+
+To start the Voice Assistant, simply run the Python script:
+
+    python chatGPT_assistant.py
+
+You'll then be able to interact with the assistant by speaking, and it will respond vocally using the generated AI responses.
+
+## Dependencies:
+
+This project relies on several Python libraries, including:
+
+- speech_recognition for converting spoken language into text
+- pyttsx3 for text-to-speech conversion
+- openai to interact with the GPT model
+
+Ensure that you have these installed in your Python environment before running the script.
+
