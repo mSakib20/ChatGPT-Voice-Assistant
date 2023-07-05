@@ -14,6 +14,10 @@ After that, install the necessary Python dependencies:
     
     pip install -r requirements.txt
 
+Don't forget to use your own OpenAI API key
+
+    link: https://platform.openai.com/account/api-keys
+
 ## Usage:
 
 To start the Voice Assistant, simply run the Python script:
