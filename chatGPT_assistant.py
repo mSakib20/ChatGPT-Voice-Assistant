@@ -13,3 +13,8 @@ engine.setProperty('voice', voices[1].id)  # voices[1] = male voice
 
 recognizer = sr.Recognizer()
 microphone = sr.Microphone(device_index=1)
+
+# Setting up the conversation variables
+conversation = ""
+userName = "User"
+aiName = "chatGPT"
